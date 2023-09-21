@@ -1,34 +1,58 @@
-.HeroFlex{
-    align-items: center;
-    display: inline-flex;
+.HeroFlex {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  align-items: center;
+  gap: 50px;
+  justify-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
     gap: 25px;
-    position: relative;
-    width: 1200px;  /* wahrscheinlich besser nicht hier width einstellen, sondern auf den <body>*/
-    }
-  
-  .Intro{ 
-    display: flex;
-    flex-direction: column;
+  }
+}
+
+.Intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  flex: 1;
+
+  @media (min-width: 768px) {
     align-items: flex-start;
-    width:fit-content;
   }
-  
-  .HeroImage{
-    position: relative;
-    size: 30%;
+}
+
+.HeroImage {
+  position: relative;
+  flex: 1;
+}
+
+.AlineLouis {
+  border-radius: 17.77778rem 17.77778rem 0rem 0rem;
+  width: 100%;
+}
+
+.Rectangle {
+  background-color: #899d8a;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 -10px -10px 0;
+  z-index: -1;
+  /* absolut gestelltes Rectangle muss noch hinter das Bild .AlineLouis gestellt werden */
+}
+
+.svgHeart {
+  max-width: 300px;
+  rotate: -15deg;
+  min-width: 100px;
+  margin: 2rem 0;
+
+  @media (min-width: 768px) {
+    max-width: none;
   }
-  
-  .AlineLouis{
-    border-radius: 17.77778rem 17.77778rem 0rem 0rem;
-  }
-  
-  .Rectangle{
-    background-color: #899D8A;
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0 -10px -10px 0;
-      /* absolut gestelltes Rectangle muss noch hinter das Bild .AlineLouis gestellt werden */
-  }
+}
