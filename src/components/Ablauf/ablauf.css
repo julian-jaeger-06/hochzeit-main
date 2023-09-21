@@ -1,0 +1,6 @@
+.AblaufFakten{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 3.33333rem;
+    position: relative;    
+}

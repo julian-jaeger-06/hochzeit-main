@@ -1,0 +1,45 @@
+:root {
+
+    --beige: rgba(248, 240, 229, 1);
+    --box-shaddow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --dark-brown: rgba(60, 55, 51, 1);
+    --green: rgba(137, 157, 138, 1);
+    --light-brown: rgba(60, 55, 51, 0,5);
+}
+
+.CountdownSection{
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 3.33rem;
+    position: relative;
+}
+
+.Countdown{
+    display: inline-flex;
+    height: 7.11111rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2.88889rem;
+    flex-shrink: 0;
+}
+
+.Countdown div{
+    width: 120px;
+    color:var(--dark-brown);
+    display: flex;
+    flex-direction: column;
+    gap: 1.66667rem;
+    align-items: center;
+
+}
+
+hr{
+    width: 2px;
+    height: 100%;
+    background-color:var(--dark-brown);
+    margin: 0;
+    padding: 0;
+    border: none;
+    opacity: 50%;
+}

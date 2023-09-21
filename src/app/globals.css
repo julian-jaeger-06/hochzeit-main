@@ -1,0 +1,91 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+
+  --beige: rgba(248, 240, 229, 1);
+  --box-shaddow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --dark-brown: rgba(60, 55, 51, 1);
+  --green: rgba(137, 157, 138, 1);
+  --light-brown: rgba(60, 55, 51, 0,5);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+  /*nochmals nach richtiger font-family schauen und wo es besser eingebettet werden kann*/
+  
+html{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main{
+  display: flex;
+  gap: 10rem;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+}
+
+body {
+  color:var(--dark-brown);
+  background-color: #F8F0E5;
+}
+  
+
+h1 {
+  color: #899D8A;
+  text-align: center;
+  font-family: 'Petit Formal Script', cursive; /*nochmals nach richtiger font-family schauen*/
+  font-size: 8.88889rem;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  margin: 10rem 0;
+}
+
+h2{
+  color: var(--green, #899D8A);
+font-family:Poppins;
+font-size: 2.22222rem;
+line-height: 2.66667rem;
+font-style: normal;
+font-weight: 600;
+text-wrap: wrap;
+margin: 0;
+}
+
+
+.h2PetitFormalScript{
+  color: var(--green);
+  font-family: Petit Formal Script;
+  font-size: 2.22222rem;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3{
+  color: var(--green);
+  font-family: Poppins;
+  font-size: 1.33333rem;
+  font-style: normal;
+  font-weight: 500;
+  }
+
+a{
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--dark-brown);
+  /* font-weight:nachbearbeiten; */
+}

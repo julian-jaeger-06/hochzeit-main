@@ -1,0 +1,34 @@
+.HeroFlex{
+    align-items: center;
+    display: inline-flex;
+    gap: 25px;
+    position: relative;
+    width: 1200px;  /* wahrscheinlich besser nicht hier width einstellen, sondern auf den <body>*/
+    }
+  
+  .Intro{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:fit-content;
+  }
+  
+  .HeroImage{
+    position: relative;
+    size: 30%;
+  }
+  
+  .AlineLouis{
+    border-radius: 17.77778rem 17.77778rem 0rem 0rem;
+  }
+  
+  .Rectangle{
+    background-color: #899D8A;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 -10px -10px 0;
+      /* absolut gestelltes Rectangle muss noch hinter das Bild .AlineLouis gestellt werden */
+  }
