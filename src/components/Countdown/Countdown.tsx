@@ -1,21 +1,18 @@
-'use client'
+"use client";
 
-import { clear } from 'console';
-import './countdown.css';
-import { useState, useEffect } from 'react';
-
-
+import { clear } from "console";
+import "./countdown.css";
+import { useState, useEffect } from "react";
 
 const Countdown = () => {
-  const [weddingTime, setWeddingTime] = useState(false)
-  const [days, setDays] = useState (0);
-  const [hours, setHours] = useState (0);
-  const [minutes, setMinutes] = useState (0);
-  const [seconds,setSeconds] = useState (0);
-
+  const [weddingTime, setWeddingTime] = useState(false);
+  const [days, setDays] = useState(0);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date ("07/06/2024 16:00:00");
+    const target = new Date("07/06/2024 16:00:00");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -40,66 +37,49 @@ const Countdown = () => {
       }
     }, 1000);
 
-      return () => clearInterval(interval);
-  },[]);
-
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    
-   
-      
-    <section className='CountdownSection'>
-       {weddingTime ? (
-      <>
-        <h2>Danke an alle für die schöne Feier!</h2>
-      </>
-    ) : (
-      <>
-        <h2>Bis zum Hochzeitstag sind es noch:
-        </h2>
-        <div className='Countdown'>
+    <section className="CountdownSection">
+      {weddingTime ? (
+        <>
+          <h2>Danke an alle für die schöne Feier!</h2>
+        </>
+      ) : (
+        <>
+          <h2>Bis zum Hochzeitstag sind es noch:</h2>
+          <div className="Countdown">
             <div>
-                <span className='h2PetitFormalScript'>{days}</span>
-                <span>Tage</span>
+              <span className="h2PetitFormalScript">{days}</span>
+              <span>Tage</span>
             </div>
-            <hr>
-            </hr>
+            <hr className="seperator" />
             <div>
-                <span className='h2PetitFormalScript'>{hours}</span>
-                <span>Stunden</span>
+              <span className="h2PetitFormalScript">{hours}</span>
+              <span>Stunden</span>
             </div>
-            <hr>
-            </hr>
+            <hr className="seperator" />
             <div>
-                <span className='h2PetitFormalScript'>{minutes}</span>
-                <span>Minuten</span>
+              <span className="h2PetitFormalScript">{minutes}</span>
+              <span>Minuten</span>
             </div>
-            <hr>
-            </hr>
+            <hr className="seperator" />
             <div>
-                <span className='h2PetitFormalScript'>{seconds}</span>
-                <span>Sekunden</span>
+              <span className="h2PetitFormalScript">{seconds}</span>
+              <span>Sekunden</span>
             </div>
-        </div>
-
-      </>
-      )}  
+          </div>
+        </>
+      )}
     </section>
   );
 };
 
-
 export default Countdown;
 
-
-
-
-
-
-
-
 function usedId() {
-  throw new Error('Function not implemented.');
+  throw new Error("Function not implemented.");
 }
 // const defaultRemainingTime ={
 //   seconds: '00',
@@ -119,7 +99,7 @@ function usedId() {
 //   },[countdownTimestampMS]);
 
 //   function updateRemainngTime(countdown) {
-   
+
 //   }
 //   return (
 //     <section className='CountdownSection'>

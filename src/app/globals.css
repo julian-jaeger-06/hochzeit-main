@@ -1,14 +1,12 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
 
 :root {
-
   --beige: rgba(248, 240, 229, 1);
   --box-shaddow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --dark-brown: rgba(60, 55, 51, 1);
   --green: rgba(137, 157, 138, 1);
-  --light-brown: rgba(60, 55, 51, 0,5);
+  --light-brown: rgba(60, 55, 51, 0, 5);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -19,70 +17,73 @@
   }
 } */
 
+/*nochmals nach richtiger font-family schauen und wo es besser eingebettet werden kann*/
 
-  @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
-  /*nochmals nach richtiger font-family schauen und wo es besser eingebettet werden kann*/
-  
-html{
+html {
   font-size: 18px;
   font-weight: 500;
 }
 
-main{
+.wrapper {
   display: flex;
   gap: 10rem;
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 body {
-  color:var(--dark-brown);
-  background-color: #F8F0E5;
+  color: var(--dark-brown);
+  background-color: #f8f0e5;
+  margin: 0
 }
-  
 
 h1 {
-  color: #899D8A;
+  color: #899d8a;
   text-align: center;
-  font-family: 'Petit Formal Script', cursive; /*nochmals nach richtiger font-family schauen*/
+  font-family: "Petit Formal Script"; /*nochmals nach richtiger font-family schauen*/
   font-size: 8.88889rem;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   margin: 10rem 0;
+
+  /* media query for fontt-size */
 }
 
-h2{
-  color: var(--green, #899D8A);
-font-family:Poppins;
-font-size: 2.22222rem;
-line-height: 2.66667rem;
-font-style: normal;
-font-weight: 600;
-text-wrap: wrap;
-margin: 0;
+h2 {
+  color: var(--green, #899d8a);
+  font-family: "Poppins";
+  font-size: 2.22222rem;
+  line-height: 2.66667rem;
+  font-style: normal;
+  font-weight: 600;
+  text-wrap: wrap;
+  margin: 0;
 }
 
-
-.h2PetitFormalScript{
+.h2PetitFormalScript {
   color: var(--green);
-  font-family: Petit Formal Script;
+  font-family: "Petit Formal Script";
   font-size: 2.22222rem;
   font-style: normal;
   font-weight: 400;
   margin: 0;
 }
 
-h3{
+h3 {
   color: var(--green);
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: 1.33333rem;
   font-style: normal;
   font-weight: 500;
-  }
+}
 
-a{
+a {
   text-decoration: underline;
   font-style: normal;
   font-weight: 500;

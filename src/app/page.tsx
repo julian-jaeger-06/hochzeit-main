@@ -16,7 +16,7 @@ export default function Home() {
   ];
 
   return (
-    <main>
+    <main className="wrapper">
       <Navbar links={links} />
       <Hero/>
       <Countdown/>
