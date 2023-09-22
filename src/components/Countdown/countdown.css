@@ -7,24 +7,27 @@
 }
 
 .CountdownSection {
-  align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 3.33rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 3rem;
   position: relative;
   padding: 1rem;
 }
 
 .Countdown {
   display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
-  /* gap: 3rem; */
   flex-shrink: 0;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 1.66667rem;
+  
+  @media (min-width: 768px) {
+    gap: 2rem;
+    flex-direction: row;
   }
 }
 
@@ -51,7 +54,7 @@
   opacity: 50%;
 
   @media (min-width: 768px) {
-    height: 40px;
+    height: 100px;
     width: 2px;
   }
 }

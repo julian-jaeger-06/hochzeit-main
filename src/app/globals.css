@@ -24,7 +24,7 @@ html {
   font-weight: 500;
 }
 
-.wrapper {
+.mainwrapper {
   display: flex;
   gap: 10rem;
   flex-direction: column;
@@ -45,12 +45,16 @@ body {
 h1 {
   color: #899d8a;
   text-align: center;
-  font-family: "Petit Formal Script"; /*nochmals nach richtiger font-family schauen*/
-  font-size: 8.88889rem;
+  font-family: "Petit Formal Script"; 
+  font-size: 8rem;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  margin: 10rem 0;
+  margin: 10rem 0 5rem;
+
+  @media (max-width: 768px) {
+    font-size: 6rem;  
+  }
 
   /* media query for fontt-size */
 }
@@ -62,7 +66,6 @@ h2 {
   line-height: 2.66667rem;
   font-style: normal;
   font-weight: 600;
-  text-wrap: wrap;
   margin: 0;
 }
 
@@ -81,6 +84,8 @@ h3 {
   font-size: 1.33333rem;
   font-style: normal;
   font-weight: 500;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -89,4 +94,5 @@ a {
   font-weight: 500;
   color: var(--dark-brown);
   /* font-weight:nachbearbeiten; */
+  margin: 0;
 }

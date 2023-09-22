@@ -1,0 +1,32 @@
+
+.TaperBild{
+    position: relative;
+    margin: 2rem;
+}
+
+
+.TapeLeft{
+    width: 1.5rem;
+    height: 3.5rem;
+    margin: -25px -20px;
+    position: absolute;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    background-color: #E8E8E8;
+    mix-blend-mode: multiply;
+    filter: drop-shadow(1px -4px 4px rgba(0, 0, 0, 0.25));    
+}
+
+.TapeRight{
+    width: 1.5rem;
+    height: 3.5rem;
+    margin: -25px -20px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    background-color: #E8E8E8;
+    mix-blend-mode: multiply;
+    filter: drop-shadow(1px -4px 4px rgba(0, 0, 0, 0.25)); 
+}
