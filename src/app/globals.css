@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
 
 :root {
@@ -6,7 +6,6 @@
   --box-shaddow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --dark-brown: rgba(60, 55, 51, 1);
   --green: rgba(137, 157, 138, 1);
-  --light-brown: rgba(60, 55, 51, 0, 5);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -19,12 +18,13 @@
 
 /*nochmals nach richtiger font-family schauen und wo es besser eingebettet werden kann*/
 
-html {
+html{
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight:300;
 }
 
-.mainwrapper {
+.mainwrapper{
   display: flex;
   gap: 10rem;
   flex-direction: column;
@@ -34,15 +34,29 @@ html {
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
-body {
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight:300;
   color: var(--dark-brown);
   background-color: #f8f0e5;
-  margin: 0
+  margin: 0;
 }
 
-h1 {
+
+.subline{
+  color: var(--dark-brown);
+  opacity: 50%;
+  font-weight: 400;
+  margin: 0;
+}
+
+
+h1{
   color: #899d8a;
   text-align: center;
   font-family: "Petit Formal Script"; 
@@ -59,9 +73,9 @@ h1 {
   /* media query for fontt-size */
 }
 
-h2 {
+h2{
   color: var(--green, #899d8a);
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-size: 2.22222rem;
   line-height: 2.66667rem;
   font-style: normal;
@@ -80,7 +94,7 @@ h2 {
 
 h3 {
   color: var(--green);
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-size: 1.33333rem;
   font-style: normal;
   font-weight: 500;
@@ -88,11 +102,23 @@ h3 {
   margin: 0;
 }
 
-a {
-  text-decoration: underline;
-  font-style: normal;
+
+h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
   font-weight: 500;
+  margin: 1.5rem 0 0 0;
+}
+
+
+a{
+  font-family: 'Poppins', sans-serif;
+  text-decoration: underline;
+  font-weight: 400;
   color: var(--dark-brown);
-  /* font-weight:nachbearbeiten; */
   margin: 0;
+}
+
+a:hover {
+  color: var(--green);
 }

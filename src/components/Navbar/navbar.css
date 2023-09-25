@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
+
+
+:root {
+  --beige: rgba(248, 240, 229, 1);
+  --box-shaddow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --dark-brown: rgba(60, 55, 51, 1);
+  --green: rgba(137, 157, 138, 1);
+}
+
+
 nav {
   z-index: 2;
   width: 100vw;
@@ -10,11 +22,12 @@ nav {
 }
 
 .navbar {
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
   margin: auto;
+  align-items: center;
 }
 
 .menu {
@@ -29,4 +42,7 @@ nav {
 
 .menu a {
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight:300;
 }

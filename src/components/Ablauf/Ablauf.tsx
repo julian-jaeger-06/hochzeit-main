@@ -3,7 +3,6 @@ import CalendarIcon from './CalendarIcon';
 import ClockIcon from './ClockIcon';
 import PinIcon from './PinIcon';
 import DressIcon from './DressIcon';
-import { readConfigFile } from 'typescript';
 
 
 export default function Ablauf() {
@@ -48,7 +47,7 @@ export default function Ablauf() {
                         <PinIcon></PinIcon>
                         <a href="https://www.google.com/maps/place/Chetzeron/@46.3240536,7.4690021,16.57z/data=!4m22!1m12!4m11!1m3!2m2!1d7.4670658!2d46.3269429!1m6!1m2!1s0x478ee1c094b8b373:0xce99e964b3e38612!2sChetzeron,+3963+Crans-Montana,+Schweiz!2m2!1d7.4669139!2d46.3265611!3m8!1s0x478ee1c094b8b373:0xce99e964b3e38612!5m2!4m1!1i2!8m2!3d46.3265611!4d7.4669139!16s%2Fg%2F11byflj49h?entry=ttu"
                             rel="noopener noreferrer" target="_blank">
-                            <span className="p">Hotel Chetzeron, 3963 Crans-Montana, Schweiz</span>
+                            <span>Hotel Chetzeron, 3963 Crans-Montana, Schweiz</span>
                         </a>
                     </div>
                     <div className='Fact'>

@@ -1,7 +1,15 @@
 
 .TaperBild{
     position: relative;
-    margin: 2rem;
+    margin: 1.5rem 2.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.HotelChetzeron{
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -12,6 +20,7 @@
     position: absolute;
     transform: rotate(45deg);
     flex-shrink: 0;
+    
     background-color: #E8E8E8;
     mix-blend-mode: multiply;
     filter: drop-shadow(1px -4px 4px rgba(0, 0, 0, 0.25));    
@@ -20,7 +29,7 @@
 .TapeRight{
     width: 1.5rem;
     height: 3.5rem;
-    margin: -25px -20px;
+    margin: -20px -10px;
     position: absolute;
     right: 0;
     bottom: 0;
