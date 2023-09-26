@@ -9,11 +9,11 @@ export default function Hero() {
       <h1>Aline & Louis</h1>
       <div className="HeroFlex">
         <div className="Intro">
-          <h2 className="text-center">Feiert unsere Hochzeit mit uns!</h2>
+          <h2 className="text-center">Feiert unsere Hochzeit mit uns</h2>
           <h2 className="h2PetitFormalScript">am 06.07.2024.</h2>
           <p>
-            Wir laden Euch herzlich zu unserer<br></br>Hochzeit ein. Feiert mit
-            uns ein neues<br></br>Kapitel in unserem Leben, gefüllt mit<br></br>{" "}
+            Wir laden Euch herzlich zu unserer Hochzeit ein. Feiert mit
+            uns ein neues Kapitel in unserem Leben, gefüllt mit 
             unendlicher Liebe und Freude.
           </p>
         </div>

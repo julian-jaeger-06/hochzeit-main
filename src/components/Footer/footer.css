@@ -1,0 +1,26 @@
+:root {
+    --beige: rgba(248, 240, 229, 1);
+    --box-shaddow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    --dark-brown: rgba(60, 55, 51, 1);
+    --green: rgba(137, 157, 138, 1);
+}
+
+
+
+.FooterSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem 0rem;
+    padding: 3rem;
+    background-color: var(--green);
+    width: 100%;
+}
+
+.Beige{
+    color:var(--beige);
+}
+
+a{
+    color: var(--beige);
+}
