@@ -5,6 +5,8 @@ import Ablauf from "@/components/Ablauf/Ablauf";
 import Location from "@/components/Location/Location"
 import Uebernachtung from "@/components/Uebernachtung/Uebernachtung";
 import Footer from "@/components/Footer/Footer";
+import Anmeldung from "@/components/Anmeldung/Anmeldung";
+
 
 export default function Home() {
 
@@ -18,16 +20,16 @@ export default function Home() {
 
   return (
     <body>
-    <main className="mainwrapper">
       <Navbar links={links} />
+    <main className="mainwrapper">
       <Hero/>
       <Countdown/>
       <Ablauf/>
       <Location/>
       <Uebernachtung/>
-
-      <Footer/>
+      <Anmeldung/>
     </main>
+      <Footer/>
     </body>
      
   );
