@@ -1,6 +1,7 @@
 'use client'
 
 import React, { use, useState } from 'react';
+import Switch from './Switch/Switch';
 import './contactForm.css'
 
 const ContactForm: React.FC = () => {
@@ -22,16 +23,15 @@ const ContactForm: React.FC = () => {
       <form className="ContactForm" onSubmit={handleSubmit}>
         <div>
           {/* Toggle button */}
-          <div className='Toggle'>
-            {/* <label>Toggle: </label> */}
-            <label>
-              <input
+          {/* <div className='Toggle'>
+            <label> Ja
+              <input 
                 type="radio"
                 value="yes"
                 checked={toggleValue}
                 onChange={() => setToggleValue(true)}
               />
-              Ja
+          
             </label>
             <label>
               <input
@@ -42,6 +42,10 @@ const ContactForm: React.FC = () => {
               />
               Leider nein
             </label>
+          </div> */}
+
+          <div>
+            <Switch/>
           </div>
     
           {/* Checkbox */}
@@ -59,9 +63,9 @@ const ContactForm: React.FC = () => {
 
         <div className='eMail'>
           {/* Email input */}
-          <div>
+          <div className='FormGroup'>
             <label>Email: </label>
-            <input
+            <input className='InputText'
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -71,9 +75,9 @@ const ContactForm: React.FC = () => {
 
         <div className='GastRow'>
           {/* Name */}
-          <div className='Name'>
+          <div className='FormGroup'>
             <label>Name Gast 1</label>
-              <input
+              <input className='InputText'
                 type="Text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -81,9 +85,9 @@ const ContactForm: React.FC = () => {
           </div>
     
           {/* Dropdown menu */}
-          <div className='Dropdown'>
+          <div className='FormGroup'>
             <label>Essenswünsche</label>
-            <select
+            <select className='Dropdown'
               value={selectedOption}
               onChange={(e) => setSelectedOption(e.target.value)}
             >
@@ -95,111 +99,9 @@ const ContactForm: React.FC = () => {
     
     
           {/* Text input */}
-          <div className='Anmerkungen'>
+          <div className='FormGroup'>
             <label>Besondere Anmerkungen</label>
-            <textarea
-              value={textInput}
-              onChange={(e) => setTextInput(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className='GastRow'>
-          {/* Name */}
-          <div className='Name'>
-            <label>Name Gast 1</label>
-              <input
-                type="Text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-          </div>
-    
-          {/* Dropdown menu */}
-          <div className='Dropdown'>
-            <label>Essenswünsche</label>
-            <select
-              value={selectedOption}
-              onChange={(e) => setSelectedOption(e.target.value)}
-            >
-              <option value="">Vegetarisch</option>
-              <option value="option1">Fleisch</option>
-              <option value="option2">Fisch</option>
-            </select>
-          </div>
-    
-    
-          {/* Text input */}
-          <div className='Anmerkungen'>
-            <label>Besondere Anmerkungen</label>
-            <textarea
-              value={textInput}
-              onChange={(e) => setTextInput(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className='GastRow'>
-          {/* Name */}
-          <div className='Name'>
-            <label>Name Gast 1</label>
-              <input
-                type="Text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-          </div>
-    
-          {/* Dropdown menu */}
-          <div className='Dropdown'>
-            <label>Essenswünsche</label>
-            <select
-              value={selectedOption}
-              onChange={(e) => setSelectedOption(e.target.value)}
-            >
-              <option value="">Vegetarisch</option>
-              <option value="option1">Fleisch</option>
-              <option value="option2">Fisch</option>
-            </select>
-          </div>
-    
-    
-          {/* Text input */}
-          <div className='Anmerkungen'>
-            <label>Besondere Anmerkungen</label>
-            <textarea
-              value={textInput}
-              onChange={(e) => setTextInput(e.target.value)}
-            />
-          </div>
-        </div>
-        <div className='GastRow'>
-          {/* Name */}
-          <div className='Name'>
-            <label>Name Gast 1</label>
-              <input
-                type="Text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-          </div>
-    
-          {/* Dropdown menu */}
-          <div className='Dropdown'>
-            <label>Essenswünsche</label>
-            <select
-              value={selectedOption}
-              onChange={(e) => setSelectedOption(e.target.value)}
-            >
-              <option value="">Vegetarisch</option>
-              <option value="option1">Fleisch</option>
-              <option value="option2">Fisch</option>
-            </select>
-          </div>
-    
-    
-          {/* Text input */}
-          <div className='Anmerkungen'>
-            <label>Besondere Anmerkungen</label>
-            <textarea
+            <textarea className='InputText'
               value={textInput}
               onChange={(e) => setTextInput(e.target.value)}
             />
