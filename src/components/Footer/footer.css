@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
+
 :root {
     --beige: rgba(248, 240, 229, 1);
     --box-shaddow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -7,20 +10,81 @@
 
 
 
-.FooterSection{
+footer{
+    padding: 3rem;
+    margin: 0;
+    background-color: var(--green);
+}
+
+.FooterContent{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-content: center;
+    text-align: center;
+    color: var(--beige);
+
+    @media (min-width:768px) {
+        max-width: 75%;
+        justify-content: space-between;
+    };
+
+}
+
+.FooterContent * {
+    color: var(--beige);
+}
+
+
+.Trauzeugen{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    justify-items: center;
+
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    };
+}
+
+
+
+
+
+.Tel{
+   display: flex;
+   gap: 0.5rem;
+   margin-top: 1rem;
+
+}
+
+
+.Tel a{
+    color: var(--beige);
+    font-size: 1.3rem;
+}
+
+.Tel a:hover{
+    color: var(--dark-brown);
+}
+
+
+.Outro{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem 0rem;
-    padding: 3rem;
-    background-color: var(--green);
-    width: 100%;
+    gap: 1rem;
 }
 
-.Beige{
-    color:var(--beige);
+
+.Outro span{
+    font-size: 1.3rem;
 }
 
-a{
+
+.Outro:last-child{
     color: var(--beige);
+    
 }
