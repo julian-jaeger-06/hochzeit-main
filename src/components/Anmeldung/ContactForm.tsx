@@ -1,106 +1,134 @@
-'use client'
+import { redirect } from "next/navigation";
+import "./contactForm.css";
+import "./switch.css";
 
-import React, { use, useState } from 'react';
-import './contactForm.css'
-import './switch.css'
+import nodemailer from "nodemailer";
 
 const ContactForm: React.FC = () => {
-    // Define state variables for form fields
-    const [isToggled, setIsToggled] = useState (true);
-    const [checkBoxValue, setCheckBoxValue] = useState<boolean>(false);
-    const [name, setName] = useState<string>('');
-    const [selectedOption, setSelectedOption] = useState<string>('');
-    const [email, setEmail] = useState<string>('');
-    const [textInput, setTextInput] = useState<string>('');
-  
-    // Handle form submission
-    const handleSubmit = (e: React.FormEvent) => {
-      e.preventDefault();
-      // Add your form submission logic here
+  // Handle form submission
+  const handleSubmit = async (formData: FormData) => {
+    "use server";
+
+    const emailInfo = {
+      Email: formData.get("email"),
+      "Gast Name": formData.get("gast"),
+      Essenswunsch: formData.get("essenswunsch"),
+      "Besondere Anmerkungen": formData.get("besondereAnmerkungen"),
+      "Anreise am Freitag?": formData.get("anreise") || "Nein",
+      Zusage: formData.get("zusage") || "Nein",
     };
-  
-    return (
-      <form className="ContactForm" onSubmit={handleSubmit}>
-        <div>
-          {/* Toggle Switch */}
-          <div>
-            Ja <label className="Switch"> 
-                <input type="checkbox" 
-                   checked={isToggled} 
-                   onChange={()=>setIsToggled(!isToggled)} />
-                <span className="Slider"></span> 
-                </label> Leider nicht
-          </div>
-    
-          {/* Checkbox */}
-          <div className='Checkbox'>
-            <label>
-              <input className='Check'
-                type="checkbox"
-                checked={checkBoxValue}
-                onChange={() => setCheckBoxValue(!checkBoxValue)}
-              />
-              Ich komme schon Freitags
-            </label>
-          </div>         
-        </div>  
 
-        <div className='eMail'>
-          {/* Email input */}
-          <div className='FormGroup'>
-            <label>Email: </label>
-            <input className='InputText'
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-        </div>
+    const transporter = nodemailer.createTransport({
+      host: "smtp-mail.outlook.com",
+      port: 587,
+      auth: {
+        user: "julian.jaeger@janus-wa.de",
+        pass: "Design_J06",
+      },
+    });
 
-        <div className='GastRow'>
-          {/* Name */}
-          <div className='FormGroup'>
-            <label>Name Gast 1</label>
-              <input className='InputText'
-                type="Text"
-                placeholder='Vorname Nachname'
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-          </div>
-    
-          {/* Dropdown menu */}
-          <div className='FormGroup'>
-            <label>Essenswünsche</label>
-            <select className='Dropdown'
-              value={selectedOption}
-              onChange={(e) => setSelectedOption(e.target.value)}
-            >
-              <option value="">Vegetarisch</option>
-              <option value="option1">Fleisch</option>
-              <option value="option2">Fisch</option>
-            </select>
-          </div>
-    
-    
-          {/* Text input */}
-          <div className='FormGroup'>
-            <label>Besondere Anmerkungen</label>
-            <textarea className='InputTextArea'
-              placeholder='z.B.: Unverträglichkeiten, Vegan, etc...'
-              value={textInput}
-              onChange={(e) => setTextInput(e.target.value)}
-            />
-          </div>
-        </div>
+    // TODO: Error handling
+    try {
+      transporter.sendMail({
+        from: "julian.jaeger@janus-wa.de",
+        to: "azakica@gmail.com",
+        subject: "Hochzeit: Anmeldung",
+        text: Object.entries(emailInfo)
+          .map(([key, value]) => `${key}: ${value}`)
+          .join("\n"),
+      });
+    } catch (err) {
+      console.log(err);
+    }
 
-        {/* Submit button */}
-        <div>
-          <button type="submit">Absenden</button>
-        </div>
-      </form>
-    );
+    //set cookie fort this user
+    
+
+    // TODO:feedback that email is sent
+    redirect("/gesendet");
   };
-  
-  export default ContactForm;
-  
+
+  // check url for gesendet=true if true dont show form
+
+  return (
+    <form className="ContactForm" action={handleSubmit}>
+      <div>
+        {/* Toggle Switch */}
+        <div>
+          Ja
+          <label className="Switch">
+            <input
+              type="checkbox"
+              name="zusage"
+              defaultChecked={true}
+              value="Ja"
+            />
+            <span className="Slider"></span>
+          </label>{" "}
+          Leider nicht
+        </div>
+
+        {/* Checkbox */}
+        <div className="Checkbox">
+          <label>
+            <input
+              className="Check"
+              name="anreise"
+              type="checkbox"
+              value="Ja"
+            />
+            Ich komme schon Freitags
+          </label>
+        </div>
+      </div>
+
+      <div className="eMail">
+        {/* Email input */}
+        <div className="FormGroup">
+          <label>Email: </label>
+          <input className="InputText" name="email" type="email" />
+        </div>
+      </div>
+
+      <div className="GastRow">
+        {/* Name */}
+        <div className="FormGroup">
+          <label>Name Gast 1</label>
+          <input
+            className="InputText"
+            type="Text"
+            name="gast"
+            placeholder="Vorname Nachname"
+          />
+        </div>
+
+        {/* Dropdown menu */}
+        <div className="FormGroup">
+          <label>Essenswünsche</label>
+          <select className="Dropdown" name="essenswunsch">
+            <option value="Vegetarisch">Vegetarisch</option>
+            <option value="Fleisch">Fleisch</option>
+            <option value="Fisch">Fisch</option>
+          </select>
+        </div>
+
+        {/* Text input */}
+        <div className="FormGroup">
+          <label>Besondere Anmerkungen</label>
+          <textarea
+            className="InputTextArea"
+            placeholder="z.B.: Unverträglichkeiten, Vegan, etc..."
+            name="besondereAnmerkungen"
+          />
+        </div>
+      </div>
+
+      {/* Submit button */}
+      <div>
+        <button type="submit">Absenden</button>
+      </div>
+    </form>
+  );
+};
+
+export default ContactForm;

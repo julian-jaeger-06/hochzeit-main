@@ -18,14 +18,13 @@
 
 /*nochmals nach richtiger font-family schauen und wo es besser eingebettet werden kann*/
 
-html *{
-  font-family: 'Poppins', sans-serif;
+html * {
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
-  font-weight:300;
+  font-weight: 300;
 }
 
-
-body{
+body {
   color: var(--dark-brown);
   background-color: #f8f0e5;
   /* background-image: url(../assets/background.jpg);
@@ -36,7 +35,7 @@ body{
   margin: 0;
 }
 
-.mainwrapper{
+.mainwrapper {
   display: flex;
   gap: 10rem;
   flex-direction: column;
@@ -48,19 +47,17 @@ body{
   overflow: hidden;
 }
 
-
-.subline{
+.subline {
   color: var(--dark-brown);
   opacity: 50%;
   font-weight: 400;
   margin: 0;
 }
 
-
-h1{
+h1 {
   color: #899d8a;
   text-align: center;
-  font-family: "Petit Formal Script"; 
+  font-family: "Petit Formal Script";
   font-size: 8rem;
   font-style: normal;
   font-weight: 400;
@@ -68,15 +65,15 @@ h1{
   margin: 10rem 0 5rem;
 
   @media (max-width: 768px) {
-    font-size: 6rem;  
+    font-size: 6rem;
   }
 
   /* media query for fontt-size */
 }
 
-h2{
+h2 {
   color: var(--green, #899d8a);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.22222rem;
   line-height: 2.66667rem;
   font-style: normal;
@@ -95,7 +92,7 @@ h2{
 
 h3 {
   color: var(--green);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.33333rem;
   font-style: normal;
   font-weight: 500;
@@ -103,17 +100,15 @@ h3 {
   margin: 0;
 }
 
-
-h4{
-  font-family: 'Poppins', sans-serif;
+h4 {
+  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   margin: 1.5rem 0 0 0;
 }
 
-
-a{
-  font-family: 'Poppins', sans-serif;
+a {
+  font-family: "Poppins", sans-serif;
   text-decoration: underline;
   font-weight: 400;
   color: var(--dark-brown);
