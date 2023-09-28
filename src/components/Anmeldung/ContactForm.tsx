@@ -1,12 +1,12 @@
 'use client'
 
 import React, { use, useState } from 'react';
-import Switch from './Switch/Switch';
 import './contactForm.css'
+import './switch.css'
 
 const ContactForm: React.FC = () => {
     // Define state variables for form fields
-    const [toggleValue, setToggleValue] = useState<boolean>(true);
+    const [isToggled, setIsToggled] = useState (true);
     const [checkBoxValue, setCheckBoxValue] = useState<boolean>(false);
     const [name, setName] = useState<string>('');
     const [selectedOption, setSelectedOption] = useState<string>('');
@@ -22,36 +22,20 @@ const ContactForm: React.FC = () => {
     return (
       <form className="ContactForm" onSubmit={handleSubmit}>
         <div>
-          {/* Toggle button */}
-          {/* <div className='Toggle'>
-            <label> Ja
-              <input 
-                type="radio"
-                value="yes"
-                checked={toggleValue}
-                onChange={() => setToggleValue(true)}
-              />
-          
-            </label>
-            <label>
-              <input
-                type="radio"
-                value="no"
-                checked={!toggleValue}
-                onChange={() => setToggleValue(false)}
-              />
-              Leider nein
-            </label>
-          </div> */}
-
+          {/* Toggle Switch */}
           <div>
-            <Switch/>
+            Ja <label className="Switch"> 
+                <input type="checkbox" 
+                   checked={isToggled} 
+                   onChange={()=>setIsToggled(!isToggled)} />
+                <span className="Slider"></span> 
+                </label> Leider nicht
           </div>
     
           {/* Checkbox */}
           <div className='Checkbox'>
             <label>
-              <input
+              <input className='Check'
                 type="checkbox"
                 checked={checkBoxValue}
                 onChange={() => setCheckBoxValue(!checkBoxValue)}
@@ -79,6 +63,7 @@ const ContactForm: React.FC = () => {
             <label>Name Gast 1</label>
               <input className='InputText'
                 type="Text"
+                placeholder='Vorname Nachname'
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
@@ -101,7 +86,8 @@ const ContactForm: React.FC = () => {
           {/* Text input */}
           <div className='FormGroup'>
             <label>Besondere Anmerkungen</label>
-            <textarea className='InputText'
+            <textarea className='InputTextArea'
+              placeholder='z.B.: Unverträglichkeiten, Vegan, etc...'
               value={textInput}
               onChange={(e) => setTextInput(e.target.value)}
             />
