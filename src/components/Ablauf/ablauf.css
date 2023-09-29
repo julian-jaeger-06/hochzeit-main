@@ -1,68 +1,68 @@
-:root {
+/* :root {
     --beige: rgba(248, 240, 229, 1);
     --box-shaddow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
     --dark-brown: #3c3733;
     --green: rgba(137, 157, 138, 1);
     --light-brown: rgba(60, 55, 51, 0, 5);
     
+} */
+
+.AblaufSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 3rem;
+  position: relative;
+  padding: 1rem;
 }
 
-.AblaufSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 3rem;
-    position: relative;
-    padding: 1rem;
+.AblaufFakten {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3rem;
+  position: relative;
+  padding: 0;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
 }
 
+.AblaufFaktenGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
 
-.AblaufFakten{
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    gap: 3rem;
-    position: relative;
-    padding: 0;  
-    
-    @media (min-width: 1024px) {
-        flex-direction: row;
-
-    }
+  @media (min-width: 1024px) {
+    max-width: 430px;
+  }
 }
 
-.AblaufFaktenGroup{
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    gap: 1.5rem;
-
-    @media (min-width: 1024px) {
-        max-width: 430px;
-    }
-
+.Fact {
+  display: flex;
+  gap: 1rem;
+  text-align: left;
 }
 
-.Fact{
-    display: flex;
-    gap: 1rem;
-    text-align: left;
+.Fact svg {
+  color: var(--green);
 }
 
+.Divider {
+  width: 100%;
+  height: 2px;
+  background-color: var(--dark-brown);
+  margin: 0;
+  padding: 0;
+  border: none;
+  opacity: 50%;
 
-.Divider{
-    width: 100%;
-    height: 2px;
-    background-color: var(--dark-brown);
-    margin: 0;
-    padding: 0;
-    border: none;
-    opacity: 50%;
-
-    @media (min-width: 1024px) {
-        width: 2px;
-        height: 300px;
-    }
+  @media (min-width: 1024px) {
+    width: 2px;
+    height: 300px;
+  }
 }

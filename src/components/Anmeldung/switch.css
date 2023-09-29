@@ -9,8 +9,9 @@
 .Switch{
     position: relative;
     display: inline-block;
-    width: 50px;
-    height: 25px;
+    width: 60px;
+    height: 30px;
+    margin: 1rem;
 
     background-color: none;
     border: 2px;
@@ -32,24 +33,28 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: none;
-    border: 2px;
-    border-color: var(--dark-brown);
+    background-color:rgba(60, 55, 51, 0.5);
+    transition: 0.4s;
 }
 
 
-.Slider::before{
+.Slider:before{
     position: absolute;
     content: "";
-    height: 25px;
+    height: 20px;
     width: 25px;
-    left: 0px;
-    bottom: 0px;
+    right: 5px;
+    bottom: 5px;
+    background-color:var(--beige);
+    transition: 0.4s;
+}
 
+
+input:checked + .Slider{
     background-color: var(--green);
+
 }
 
 input:checked + .Slider::before{
-    transform: translateX(25px);
-
+    transform: translateX(-25px);
 }
