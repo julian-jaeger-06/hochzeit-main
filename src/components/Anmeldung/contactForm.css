@@ -24,14 +24,34 @@
 }
 
 
+/* Intro Zusage */
+
+.ToogleColum{
+  width: 292px;
+}
 
 .Check{
   width: 1.3rem;
   height: 1.3rem;
-  border-style: solid;
-  border-width: 2px;
-  border-color: var(--dark-brown);
-  outline: 5px;
+  border: 10px solid var(--dark-brown) !important;
+  cursor: pointer;
+  margin: 0;  
+}
+
+.Check:checked{
+  color: var(--green);
+  background-color: var(--green);
+}
+
+.Checkbox{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    
+    align-self: center;
+  }
 }
 
 
@@ -83,4 +103,6 @@ button{
 
 button:hover{
   background-color: rgba(60, 55, 51, 0.5);
+  cursor: pointer;
+  
 }

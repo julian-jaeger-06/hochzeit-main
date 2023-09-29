@@ -48,7 +48,7 @@ const Countdown = () => {
         </>
       ) : (
         <>
-          <h2>Bis zum Hochzeitstag sind es noch:</h2>
+          <h2>Bis zur Hochzeit sind es nur noch</h2>
           <div className="Countdown">
             <div>
               <span className="h2PetitFormalScript">{days}</span>
@@ -75,5 +75,6 @@ const Countdown = () => {
     </section>
   );
 };
+
 
 export default Countdown;

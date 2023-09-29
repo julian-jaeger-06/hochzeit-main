@@ -32,8 +32,8 @@ export default function Uebernachtung() {
               Doppelzimmer (etwas größer mit Balkon)
             </span>
             <span>
-              135 CHF pro Nacht <br />
-              165 CHF pro Nacht
+              135 CHF/ Nacht <br />
+              165 CHF/ Nacht
             </span>
           </div>
         </div>
@@ -62,13 +62,12 @@ export default function Uebernachtung() {
               Stellplatz Wohnwagen
             </span>
             <span>
-              8 CHF pro Nacht <br />
-              18 CHF pro Nacht
+              8 CHF/ Nacht <br />
+              18 CHF/ Nacht
             </span>
           </div>
         </div>
       </div>
     </section>
-    // Nochmal komplett überarbeiten display flex/ grid?
   );
 }

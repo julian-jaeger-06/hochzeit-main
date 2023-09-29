@@ -62,7 +62,7 @@ h1 {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  margin: 10rem 0 5rem;
+  margin: 10rem 2rem 5rem;
 
   @media (max-width: 768px) {
     font-size: 6rem;

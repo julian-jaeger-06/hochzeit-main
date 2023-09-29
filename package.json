@@ -16,6 +16,7 @@
     "autoprefixer": "10.4.15",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
+    "js-cookie": "^3.0.5",
     "next": "13.4.19",
     "nodemailer": "^6.9.5",
     "postcss": "8.4.29",
@@ -27,6 +28,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@types/js-cookie": "^3.0.4",
     "@types/nodemailer": "^6.4.11"
   }
 }
