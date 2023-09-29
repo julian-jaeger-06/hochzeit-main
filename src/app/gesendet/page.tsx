@@ -1,10 +1,7 @@
-import Countdown from "@/components/Countdown/Countdown";
-import Navbar from "@/components/Navbar/Navbar";
-import { Main } from "next/document";
-import { Grenze } from "next/font/google";
-import { BsCheck2 } from 'react-icons/bs';
-import './page.css'
 import Footer from "@/components/Footer/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import { BsCheck2 } from 'react-icons/bs';
+import './page.css';
 
 
 export default function Response() {
