@@ -11,8 +11,8 @@ const ContactForm: React.FC = () => {
     return (
       <form action={newSubmission} className="AnmeldungSection">
         {/* TODO: style this */}
-        <h3>Danke für deine Anmeldung</h3>
-        <p className="subline">Wir freuen uns auf dich!</p>
+        <h3>Danke für deine Rückmeldung</h3>
+        {/* <p className="subline">Wir freuen uns auf dich!</p> */}
         <button className="bg-[#899C89]" type="submit">Neue Anmeldung</button>
       </form>
     );

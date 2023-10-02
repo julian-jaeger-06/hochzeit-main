@@ -25,8 +25,7 @@ export default function FormContent() {
         </div>
         {zusage &&
           <div className="Checkbox">
-            <input
-              className="Check"
+            <input className="Check"
               name="anreise"
               type="checkbox"
               value="Ja"
@@ -69,7 +68,7 @@ export default function FormContent() {
               <label>
                 Essenswünsche<sup className="Required">*</sup>
               </label>
-              <select className="Dropdown" name="essenswunsch" required>
+              <select className="Dropdown" name="essenswunsch1" required>
                 <option className="Dropdown" value="Kein Wunschh">Kein Wunsch</option>
                 <option value="Vegetarisch">Vegetarisch</option>
                 <option value="Fleisch">Fleisch</option>
@@ -81,9 +80,9 @@ export default function FormContent() {
             <div className="FormGroup">
               <label>Besondere Anmerkungen</label>
               <textarea
-                className="InputTextArea"
+                className="InputText"
                 placeholder="z.B.: Unverträglichkeiten, Vegan, etc..."
-                name="besondereAnmerkungen"
+                name="besondereAnmerkungen1"
               />
             </div>
           </div>
@@ -96,7 +95,7 @@ export default function FormContent() {
               <input
                 className="InputText"
                 type="Text"
-                name="gast1"
+                name="gast2"
                 placeholder="Vorname Nachname"
               />
             </div>
@@ -106,7 +105,7 @@ export default function FormContent() {
               <label>
                 Essenswünsche
               </label>
-              <select className="Dropdown" name="essenswunsch">
+              <select className="Dropdown" name="essenswunsch2">
                 <option value="Kein Wunschh">Kein Wunsch</option>
                 <option value="Vegetarisch">Vegetarisch</option>
                 <option value="Fleisch">Fleisch</option>
@@ -118,9 +117,9 @@ export default function FormContent() {
             <div className="FormGroup">
               <label>Besondere Anmerkungen</label>
               <textarea
-                className="InputTextArea"
+                className="InputText"
                 placeholder="z.B.: Unverträglichkeiten, Vegan, etc..."
-                name="besondereAnmerkungen"
+                name="besondereAnmerkungen2"
               />
             </div>
           </div>
@@ -133,7 +132,7 @@ export default function FormContent() {
               <input
                 className="InputText"
                 type="Text"
-                name="gast1"
+                name="gast3"
                 placeholder="Vorname Nachname"
               />
             </div>
@@ -143,7 +142,7 @@ export default function FormContent() {
               <label>
                 Essenswünsche
               </label>
-              <select className="Dropdown" name="essenswunsch">
+              <select className="Dropdown" name="essenswunsch3">
                 <option value="Kein Wunschh">Kein Wunsch</option>
                 <option value="Vegetarisch">Vegetarisch</option>
                 <option value="Fleisch">Fleisch</option>
@@ -155,9 +154,9 @@ export default function FormContent() {
             <div className="FormGroup">
               <label>Besondere Anmerkungen</label>
               <textarea
-                className="InputTextArea"
+                className="InputText"
                 placeholder="z.B.: Unverträglichkeiten, Vegan, etc..."
-                name="besondereAnmerkungen"
+                name="besondereAnmerkungen3"
               />
             </div>
           </div>
@@ -170,7 +169,7 @@ export default function FormContent() {
               <input
                 className="InputText"
                 type="Text"
-                name="gast1"
+                name="gast4"
                 placeholder="Vorname Nachname"
               />
             </div>
@@ -180,7 +179,7 @@ export default function FormContent() {
               <label>
                 Essenswünsche
               </label>
-              <select className="Dropdown" name="essenswunsch">
+              <select className="Dropdown" name="essenswunsch4">
                 <option value="Kein Wunschh">Kein Wunsch</option>
                 <option value="Vegetarisch">Vegetarisch</option>
                 <option value="Fleisch">Fleisch</option>
@@ -192,9 +191,9 @@ export default function FormContent() {
             <div className="FormGroup">
               <label>Besondere Anmerkungen</label>
               <textarea
-                className="InputTextArea"
+                className="InputText"
                 placeholder="z.B.: Unverträglichkeiten, Vegan, etc..."
-                name="besondereAnmerkungen"
+                name="besondereAnmerkungen4"
               />
             </div>
           </div>

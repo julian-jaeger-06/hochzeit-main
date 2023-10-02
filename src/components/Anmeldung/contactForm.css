@@ -36,12 +36,13 @@
   cursor: pointer;
   margin: 0;  
   border: solid;
-  border-color: #899d8a;
-}
+  color: #899d8a;
+  background-color:#d7d4d4bb;
+  outline-color: #899d8a;}
 
 .Check:checked{
-  color: var(--green);
-  background-color: #899d8a;
+  accent-color: var(--green)
+
 }
 
 .Check:hover{
@@ -76,14 +77,19 @@
 
 .InputText{
   width: 18rem;
-  height: 2rem;
+  padding: 0.5rem;
   border: none;
+  color: black;
+  background-color:#d7d4d4bb;
+  outline-color: #899d8a;
+  mix-blend-mode: multiply;
+
 }
 
-
-/* .InputText:focus-visible{
-  border:#899d8a;
-} */
+.InputText::placeholder{
+  opacity: 70%;
+  color: var(--dark-brown);
+}
 
 
 
@@ -93,14 +99,12 @@
   margin: 0;
   padding: 0;
   border: none;
+  color: black;
+  background-color:#d7d4d4bb;
+  outline-color: #899d8a;
+  mix-blend-mode: multiply;
 }
 
-
-.InputTextArea{
-  width: 18rem;
-  min-height: 4rem;
-  border: none;
-}
 
 .Required{
   color: var(--green);
