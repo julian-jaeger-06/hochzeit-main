@@ -38,7 +38,7 @@ export const handleSubmit = async (formData: FormData) => {
   try {
     await transporter.sendMail({
       from: "info@alineundlouis.wedding",
-      to: "julian.jaeger.work@gmail.com",
+      to: "louis.weber@hw-foods.de",
       subject: "Hochzeit: Anmeldung",
       text: Object.entries(emailInfo)
         .map(([key, value]) => `${key}: ${value}`)
