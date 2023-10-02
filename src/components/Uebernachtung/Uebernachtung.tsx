@@ -13,7 +13,7 @@ export default function Uebernachtung() {
               Bitte einfach per Mail an{" "}
               <a className="underline" href="mailto:hello@alaialodge.ch">hello@alaialodge.ch</a>{" "}
               schreiben, dass es sich um die auf Weber reservierten Zimmer
-              handelt.
+              handelt (Code-Wort „Weber july wedding“).
             </span>
           </div>
           <div className="Fact">
