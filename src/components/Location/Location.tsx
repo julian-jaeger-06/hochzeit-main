@@ -25,7 +25,7 @@ export default function Location() {
                     <h4>
                         Auto Parkmöglichkeit
                     </h4>
-                    <a href='https://www.google.com/maps/place/Rte+des+T%C3%A9l%C3%A9ph%C3%A9riques+32/@46.3086403,7.4671481,20.25z/data=!4m7!3m6!1s0x478ee0337f683885:0xa2d4bc046344bed6!4b1!8m2!3d46.3087565!4d7.4669288!16s%2Fg%2F11c5np9g08?entry=ttu'
+                    <a className='underline' href='https://www.google.com/maps/place/Rte+des+T%C3%A9l%C3%A9ph%C3%A9riques+32/@46.3086403,7.4671481,20.25z/data=!4m7!3m6!1s0x478ee0337f683885:0xa2d4bc046344bed6!4b1!8m2!3d46.3087565!4d7.4669288!16s%2Fg%2F11c5np9g08?entry=ttu'
                         rel="noopener noreferrer" target="_blank">
                     <span>
                         Route des Téléphériques 32 3963 Crans-Montana
@@ -50,7 +50,7 @@ export default function Location() {
                     <h4>
                         Adresse Gondel:
                     </h4>
-                    <a href='https://www.google.com/maps/place/Rte+des+T%C3%A9l%C3%A9ph%C3%A9riques+32/@46.3086403,7.4671481,20.25z/data=!4m7!3m6!1s0x478ee0337f683885:0xa2d4bc046344bed6!4b1!8m2!3d46.3087565!4d7.4669288!16s%2Fg%2F11c5np9g08?entry=ttu'
+                    <a className='underline' href='https://www.google.com/maps/place/Rte+des+T%C3%A9l%C3%A9ph%C3%A9riques+32/@46.3086403,7.4671481,20.25z/data=!4m7!3m6!1s0x478ee0337f683885:0xa2d4bc046344bed6!4b1!8m2!3d46.3087565!4d7.4669288!16s%2Fg%2F11c5np9g08?entry=ttu'
                         rel="noopener noreferrer" target="_blank">
                     <span>
                         Route des Téléphériques 32 3963 Crans-Montana

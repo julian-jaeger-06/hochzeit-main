@@ -37,6 +37,9 @@ body {
   background-repeat: no-repeat;
   background-position: center; */
   margin: 0;
+  padding-top: 80px;
+
+
 }
 
 .mainwrapper {
@@ -106,14 +109,13 @@ h3 {
 
 h4 {
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: 500;
   margin: 1.5rem 0 0 0;
 }
 
 a {
   font-family: "Poppins", sans-serif;
-  text-decoration: underline;
   font-weight: 400;
   color: var(--dark-brown);
   margin: 0;

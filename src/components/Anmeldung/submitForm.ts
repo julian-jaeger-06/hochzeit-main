@@ -4,28 +4,28 @@ import { cookies } from "next/headers";
 
 export const handleSubmit = async (formData: FormData) => {
   const emailInfo = {
-    Email: formData.get("email"),
-    "Name Gast 1": formData.get("gast1"),
-    Essenswunsch: formData.get("essenswunsch"),
-    "Besondere Anmerkungen": formData.get("besondereAnmerkungen"),
+    "Zusage?": formData.get("zusage") || "Nein",
     "Anreise am Freitag?": formData.get("anreise") || "Nein",
-    Zusage: formData.get("zusage") || "Nein",
+    "E-Mail Adresse": formData.get("email") || "",
+    "Name Gast 1": formData.get("gast1")  || "",
+    "Essenswunsch": formData.get("essenswunsch") || "",
+    "Besondere Anmerkungen": formData.get("besondereAnmerkungen") || "",
   };
 
   const transporter = nodemailer.createTransport({
-    host: "smtp-mail.outlook.com",
-    port: 587,
+    host: "smtps.udag.de",
+    port: 465,
     auth: {
-      user: "julian.jaeger@janus-wa.de",
-      pass: "Design_J06",
+      user: "alineundlouis-wedding-0001",
+      pass: "Tw5mtUKvUE*V5sS",
     },
   });
 
   // TODO: Error handling
   try {
     await transporter.sendMail({
-      from: "julian.jaeger@janus-wa.de",
-      to: "azakica@gmail.com",
+      from: "info@alineundlouis.wedding",
+      to: "julian.jaeger.work@gmail.com",
       subject: "Hochzeit: Anmeldung",
       text: Object.entries(emailInfo)
         .map(([key, value]) => `${key}: ${value}`)

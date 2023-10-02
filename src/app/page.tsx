@@ -19,18 +19,28 @@ export default function Home() {
   ];
 
   return (
-    <body>
+    <body className="scroll-p-20">
       <Navbar links={links} />
-    <main className="mainwrapper">
-      <Hero/>
-      <Countdown/>
-      <Ablauf/>
-      <Location/>
-      <Uebernachtung/>
-      <Anmeldung/>
-    </main>
-      <Footer/>
+      <main className="mainwrapper">
+        <Hero />
+        <section id='countdown'>
+          <Countdown />
+        </section>
+        <section id='ablauf'>
+          <Ablauf />
+        </section>
+        <section id='location'>
+          <Location />
+        </section>
+        <section id="uebernachtung">
+          <Uebernachtung />
+        </section>
+        <section id="anmeldung">
+          <Anmeldung />
+        </section>
+      </main>
+      <Footer />
     </body>
-     
+
   );
 }

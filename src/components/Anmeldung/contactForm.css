@@ -2,7 +2,7 @@
   --beige: rgba(248, 240, 229, 1);
   --box-shaddow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --dark-brown: rgba(60, 55, 51, 1);
-  --green: rgba(137, 157, 138, 1);
+  --green: #899d8a;
 }
 
 
@@ -33,15 +33,21 @@
 .Check{
   width: 1.3rem;
   height: 1.3rem;
-  border: 10px solid var(--dark-brown) !important;
   cursor: pointer;
   margin: 0;  
+  border: solid;
+  border-color: #899d8a;
 }
 
 .Check:checked{
   color: var(--green);
-  background-color: var(--green);
+  background-color: #899d8a;
 }
+
+.Check:hover{
+  background-color: #899d8a;
+}
+
 
 .Checkbox{
   display: flex;
@@ -74,6 +80,13 @@
   border: none;
 }
 
+
+/* .InputText:focus-visible{
+  border:#899d8a;
+} */
+
+
+
 .Dropdown{
   width: 10rem;
   height: 2rem;
@@ -89,6 +102,9 @@
   border: none;
 }
 
+.Required{
+  color: var(--green);
+}
 
 
 /* Button "Absenden" */
