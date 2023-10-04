@@ -224,20 +224,20 @@ export default function FormContent() {
               />
             </div>
             <div className="FormGroup">
-              <label className="font-medium">Name Gast 2</label>
+              <label className="font-medium">Name Gast 3</label>
               <input
                 className="InputText"
                 type="Text"
-                name="gast2"
+                name="gast3"
                 placeholder="Vorname Nachname"
               />
             </div>
             <div className="FormGroup">
-              <label className="font-medium">Name Gast 2</label>
+              <label className="font-medium">Name Gast 4</label>
               <input
                 className="InputText"
                 type="Text"
-                name="gast2"
+                name="gast4"
                 placeholder="Vorname Nachname"
               />
             </div>
