@@ -23,21 +23,21 @@ export default function FormContent() {
           </label>{" "}
           Leider nicht
         </div>
-        {zusage &&
+        {zusage && (
           <div className="Checkbox">
-            <input className="Check"
+            <input
+              className="Check"
               name="anreise"
               type="checkbox"
               value="Ja"
             />
             <label>Ich komme schon Freitags</label>
           </div>
-        }
+        )}
       </div>
 
       {zusage ? (
         <>
-
           <div className="eMail">
             {/* Email input */}
             <div className="FormGroup">
@@ -69,7 +69,9 @@ export default function FormContent() {
                 Essenswünsche<sup className="Required">*</sup>
               </label>
               <select className="Dropdown" name="essenswunsch1" required>
-                <option className="Dropdown" value="Kein Wunschh">Kein Wunsch</option>
+                <option className="Dropdown" value="Kein Wunschh">
+                  Kein Wunsch
+                </option>
                 <option value="Vegetarisch">Vegetarisch</option>
                 <option value="Fleisch">Fleisch</option>
                 <option value="Fisch">Fisch</option>
@@ -89,9 +91,7 @@ export default function FormContent() {
           <div className="GastRow">
             {/* Name */}
             <div className="FormGroup">
-              <label className="font-medium">
-                Name Gast 2
-              </label>
+              <label className="font-medium">Name Gast 2</label>
               <input
                 className="InputText"
                 type="Text"
@@ -102,9 +102,7 @@ export default function FormContent() {
 
             {/* Dropdown menu */}
             <div className="FormGroup">
-              <label>
-                Essenswünsche
-              </label>
+              <label>Essenswünsche</label>
               <select className="Dropdown" name="essenswunsch2">
                 <option value="Kein Wunschh">Kein Wunsch</option>
                 <option value="Vegetarisch">Vegetarisch</option>
@@ -126,9 +124,7 @@ export default function FormContent() {
           <div className="GastRow">
             {/* Name */}
             <div className="FormGroup">
-              <label className="font-medium">
-                Name Gast 3
-              </label>
+              <label className="font-medium">Name Gast 3</label>
               <input
                 className="InputText"
                 type="Text"
@@ -139,9 +135,7 @@ export default function FormContent() {
 
             {/* Dropdown menu */}
             <div className="FormGroup">
-              <label>
-                Essenswünsche
-              </label>
+              <label>Essenswünsche</label>
               <select className="Dropdown" name="essenswunsch3">
                 <option value="Kein Wunschh">Kein Wunsch</option>
                 <option value="Vegetarisch">Vegetarisch</option>
@@ -163,9 +157,7 @@ export default function FormContent() {
           <div className="GastRow">
             {/* Name */}
             <div className="FormGroup">
-              <label className="font-medium">
-                Name Gast 4
-              </label>
+              <label className="font-medium">Name Gast 4</label>
               <input
                 className="InputText"
                 type="Text"
@@ -176,9 +168,7 @@ export default function FormContent() {
 
             {/* Dropdown menu */}
             <div className="FormGroup">
-              <label>
-                Essenswünsche
-              </label>
+              <label>Essenswünsche</label>
               <select className="Dropdown" name="essenswunsch4">
                 <option value="Kein Wunschh">Kein Wunsch</option>
                 <option value="Vegetarisch">Vegetarisch</option>
@@ -197,14 +187,68 @@ export default function FormContent() {
               />
             </div>
           </div>
-
         </>
       ) : (
-        <div>Absagen?</div>
+        <>
+          <div className="text-center font-bold">Absagen?</div>
+          <div className="eMail">
+            {/* Email input */}
+            <div className="FormGroup">
+              <label>
+                Email:<sup className="Required">*</sup>{" "}
+              </label>
+              <input className="InputText" name="email" type="email" required />
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            <div className="FormGroup">
+              <label className="font-medium">
+                Name Gast 1<sup className="Required">*</sup>
+              </label>
+              <input
+                className="InputText"
+                type="Text"
+                name="gast1"
+                required
+                placeholder="Vorname Nachname"
+              />
+            </div>
+            <div className="FormGroup">
+              <label className="font-medium">Name Gast 2</label>
+              <input
+                className="InputText"
+                type="Text"
+                name="gast2"
+                placeholder="Vorname Nachname"
+              />
+            </div>
+            <div className="FormGroup">
+              <label className="font-medium">Name Gast 2</label>
+              <input
+                className="InputText"
+                type="Text"
+                name="gast2"
+                placeholder="Vorname Nachname"
+              />
+            </div>
+            <div className="FormGroup">
+              <label className="font-medium">Name Gast 2</label>
+              <input
+                className="InputText"
+                type="Text"
+                name="gast2"
+                placeholder="Vorname Nachname"
+              />
+            </div>
+          </div>
+        </>
       )}
       {/* Submit button */}
       <div>
-        <button className="bg-[#899C89]" type="submit">Absenden</button>
+        <button className="bg-[#899C89]" type="submit">
+          Absenden
+        </button>
       </div>
     </div>
   );
