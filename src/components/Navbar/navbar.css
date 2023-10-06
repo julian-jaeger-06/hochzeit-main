@@ -31,12 +31,12 @@ nav {
 }
 
 .Menu {
-  display: inline-flex;
+  display: none;
   gap: 30px;
   position: relative;
 
-  @media (max-width: 768px) {
-    display: none;
+  @media(min-width: 768px) {
+    display: flex;
   }
 }
 

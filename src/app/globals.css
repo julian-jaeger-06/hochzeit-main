@@ -36,8 +36,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
-
 }
 
 .mainwrapper {
@@ -63,17 +61,16 @@ h1 {
   color: #899d8a;
   text-align: center;
   font-family: "Petit Formal Script";
-  font-size: 8rem;
+  font-size: 6rem;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  margin: 10rem 2rem 5rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 
-  @media (max-width: 768px) {
-    font-size: 6rem;
+  @media (min-width: 768px) {
+    font-size: 8rem;
   }
-
-  /* media query for fontt-size */
 }
 
 h2 {
