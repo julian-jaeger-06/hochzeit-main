@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Petit_Formal_Script } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
+  weight: ["300", "400", "500", "600"],
   subsets: ["latin"],
-  weight: "100",
+});
+
+const script = Petit_Formal_Script({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-heading",
 });
 
 export const metadata: Metadata = {
@@ -17,13 +23,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
   return (
     <html lang="de">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={poppins.className}>{children}</body>
+      <body className={[poppins.className, script.variable].join(" ")}>
+        {children}
+      </body>
     </html>
   );
 }
