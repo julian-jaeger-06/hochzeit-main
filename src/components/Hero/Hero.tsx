@@ -1,27 +1,26 @@
-import Heart from "@/app/heart.svg";
+import WeddingPhoto from "@/assets/hero_aline_louis.jpeg";
 import Image, { StaticImageData } from "next/image";
 import "./hero.css";
-import WeddingPhoto from "@/assets/hero_aline_louis.jpeg";
 
 export default function Hero() {
   return (
     <section>
       <h1>Aline & Louis</h1>
       <div className="HeroFlex">
-        <div className="Intro">
-          <h2 className="text-center">Feiert unsere Hochzeit mit uns</h2>
+        <div className="text-center lg:text-left flex flex-col gap-4">
+          <h2>Feiert unsere Hochzeit mit uns</h2>
           <h2 className="h2PetitFormalScript">am 06.07.2024.</h2>
           <p>
-            Wir laden Euch herzlich zu unserer Hochzeit ein. Feiert mit
-            uns ein neues Kapitel in unserem Leben, gefüllt mit 
-            unendlicher Liebe und Freude.
+            Wir laden Euch herzlich zu unserer Hochzeit ein. Feiert mit uns ein
+            neues Kapitel in unserem Leben, gefüllt mit unendlicher Liebe und
+            Freude.
           </p>
         </div>
 
         <div className="HeroImage">
-          <img
+          <Image
             className="AlineLouis max-w-full"
-            src={WeddingPhoto.src}
+            src={WeddingPhoto}
             alt="Aline und Louis"
           />
           <div className="Rectangle"></div>
@@ -51,8 +50,6 @@ export default function Hero() {
             />
           </g>
         </svg>
-
-        {/* Bilder und SVG muss noch ausgetauscht werden, konnte aber nicht richtig verknüpft werden */}
       </div>
     </section>
   );

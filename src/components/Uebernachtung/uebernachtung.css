@@ -1,52 +1,46 @@
 :root {
-    --beige: rgba(248, 240, 229, 1);
-    --box-shaddow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    --dark-brown: #3c3733;
-    --green: rgba(137, 157, 138, 1);
-    --light-brown: rgba(60, 55, 51, 0, 5);
+  --beige: rgba(248, 240, 229, 1);
+  --box-shaddow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  --dark-brown: #3c3733;
+  --green: rgba(137, 157, 138, 1);
+  --light-brown: rgba(60, 55, 51, 0, 5);
 }
 
-
-
-.UebernachtungSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 3rem;
-    position: relative;
-    padding: 1rem;
-    width: 100%;
+.UebernachtungSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 3rem;
+  position: relative;
+  padding: 1rem;
+  width: 100%;
 }
 
+.UebernachtungFakten {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  position: relative;
+  padding: 0;
+  text-align: left;
 
-.UebernachtungFakten{
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    gap: 3rem;
-    position: relative;
-    padding: 0;
-    text-align: left;  
-    
-    @media (min-width: 1024px) {
-        flex-direction: row;
-
-    }
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
 }
 
-.UebernachtungFaktenGroup{
-    display: flex;
-    flex-direction: column;
-    align-items:start;
-    gap: 1.5rem;
-
+.UebernachtungFaktenGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
 }
 
-.Fact{
-    display: flex;
-    gap: 1rem;
-    text-align: left;
-
+.Fact {
+  display: flex;
+  gap: 1.5rem;
+  text-align: left;
 }

@@ -23,7 +23,7 @@
     @media (min-width: 1024px) {
         grid-template-columns: 1fr 1fr;
         gap: 50px;
-        text-align: start;
+        text-align: flex-start;
       }
 }
 
