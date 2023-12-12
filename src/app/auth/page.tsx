@@ -5,7 +5,7 @@ import Image from "next/image";
 import bg from "@/assets/background_paper.jpeg";
 
 const initialState = {
-  message: null,
+  message: "",
 };
 
 export default function Page() {
