@@ -21,7 +21,7 @@ export default function Page() {
         quality={100}
         className="fixed inset-0 -z-10 w-screen h-screen object-cover"
       />
-      <div className="grid place-content-center">
+      <div className="grid place-content-center mb-12">
         <div className="text-center font-bold text-3xl mb-8">Anmeldung</div>
         <form action={formAction} className="flex flex-col">
           <label className="mb-12 relative">
