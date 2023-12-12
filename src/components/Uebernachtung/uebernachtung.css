@@ -21,7 +21,7 @@
 .UebernachtungFakten {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: 3rem;
   position: relative;
   padding: 0;
@@ -35,7 +35,7 @@
 .UebernachtungFaktenGroup {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: 1.5rem;
 }
 

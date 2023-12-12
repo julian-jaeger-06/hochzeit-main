@@ -8,6 +8,8 @@ import Footer from "@/components/Footer/Footer";
 import Anmeldung from "@/components/Anmeldung/Anmeldung";
 import bg from "@/assets/background_paper.jpeg";
 import Image from "next/image";
+import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 
 export default function Home() {
   const links = [
@@ -17,6 +19,11 @@ export default function Home() {
     { label: "Übernachtung", url: "#uebernachtung" },
     { label: "Anmeldung", url: "#anmeldung" },
   ];
+
+  const auth = cookies().get("auth")?.value;
+  if (auth !== "AlineLouis2024") {
+    redirect("/auth");
+  }
 
   return (
     <>

@@ -119,3 +119,18 @@ a {
 a:hover {
   color: var(--green);
 }
+
+.InputText {
+  width: 18rem;
+  padding: 0.5rem;
+  border: none;
+  color: black;
+  background-color: #d7d4d4bb;
+  outline-color: #899d8a;
+  mix-blend-mode: multiply;
+}
+
+.InputText::placeholder {
+  opacity: 70%;
+  color: var(--dark-brown);
+}
