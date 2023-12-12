@@ -31,7 +31,7 @@
   }
 }
 
-.Countdown div {
+.Countdown > div {
   width: 120px;
   color: var(--dark-brown);
   display: flex;
